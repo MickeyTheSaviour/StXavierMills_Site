@@ -1,0 +1,196 @@
+/* St.Xavier Timber Site Bootstrap Sass Theme
+ * Author: Kasun Fernnado
+ * Version 1.0 */
+@import url(bootstrap.css);
+.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: url("../img/up.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
+
+body {
+  position: relative;
+  font-size: 1.15em; }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent; }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #2196f3; }
+
+.navbar-brand {
+  height: 1%;
+  width: 76%; }
+
+.navbar-right {
+  margin-right: 1%; }
+
+.navbar-toggle {
+  margin-top: 4%;
+  margin-bottom: 4%; }
+
+.navbar-nav {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+#nav {
+  padding: 1%;
+  background-color: #fff; }
+  #nav ul a {
+    background-color: #fff;
+    display: block;
+    color: #84ad05;
+    padding-bottom: 12px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    text-align: center;
+    text-align: -webkit-center;
+    -webkit-transition: border-bottom-color 0.1s linear;
+    -moz-transition: border-bottom-color 0.1s linear;
+    -o-transition: border-bottom-color 0.1s linear;
+    transition: border-bottom-color 0.1s linear; }
+  #nav ul a:hover, #nav ul a:active, #nav ul a:focus {
+    border-bottom-color: #2196f3;
+    color: #2196f3;
+    -webkit-transition: border-bottom-color 0.1s linear;
+    -moz-transition: border-bottom-color 0.1s linear;
+    -o-transition: border-bottom-color 0.1s linear;
+    transition: border-bottom-color 0.1s linear; }
+
+h1 {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  text-align: center;
+  color: #84ad05; }
+
+#slider {
+  margin-top: 17%;
+  text-align: left; }
+
+#profile, #products, #services, #contact {
+  padding-top: 17%; }
+
+#profile img {
+  margin: 0 auto;
+  padding: 15%; }
+#profile h3 {
+  color: #84ad05;
+  text-align: center;
+  padding: 5%; }
+#profile section {
+  margin: 0 6%;
+  overflow-y: auto;
+  max-height: 300px; }
+#profile h5 {
+  color: #84ad05;
+  text-align: center;
+  padding: 2% 0;
+  border: 2px solid #84ad05;
+  border-radius: 10px;
+  margin: 10% auto;
+  width: 50%; }
+  #profile h5 span {
+    color: #263238; }
+#profile p {
+  text-align: justify; }
+
+#products img {
+  padding: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+#products .caption {
+  text-align: center; }
+#products .thumbnail {
+  border: none; }
+
+#services img {
+  padding: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+#services .caption {
+  text-align: center; }
+#services section {
+  margin: 0 6%;
+  overflow-x: auto;
+  max-height: 500px; }
+
+#contact .caption {
+  text-align: center;
+  padding-bottom: 5%; }
+#contact .google-maps {
+  position: relative;
+  margin: 10px;
+  margin-top: 20px;
+  height: 460px; }
+  #contact .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 200px;
+    max-height: 470px; }
+#contact #location p {
+  text-transform: uppercase; }
+#contact #location h6 {
+  color: #2196f3; }
+#contact .form-group {
+  margin: 10px 20px; }
+  #contact .form-group .form-control {
+    margin: 10px auto; }
+  #contact .form-group .form-control:focus {
+    border-color: #84ad05;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(132, 173, 5, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(132, 173, 5, 0.6); }
+  #contact .form-group .btn {
+    margin: 10px auto; }
+
+#footer {
+  color: #fff;
+  text-align: center;
+  margin-top: 5%;
+  padding: 5%;
+  background-color: #30312c; }
+  #footer a {
+    padding: 2%; }
+    #footer a img {
+      margin: 0 auto;
+      max-width: 40px; }
+
+@media (min-width: 544px) {
+  #slider {
+    margin-top: 14%; }
+
+  #profile, #products, #services, #contact {
+    padding-top: 14%; } }
+@media only screen and (min-width: 768px) {
+  #slider {
+    margin-top: 9%; }
+
+  #profile, #products, #services, #contact {
+    padding-top: 9%; } }
+@media only screen and (min-width: 992px) {
+  #slider {
+    margin-top: 8%; }
+
+  #profile, #products, #services, #contact {
+    padding-top: 8%; } }
+@media only screen and (min-width: 1200px) {
+  #slider {
+    margin-top: 5%; }
+
+  #profile, #products, #services, #contact {
+    padding-top: 6%; } }

@@ -1,0 +1,251 @@
+/*
+      St.Xavier Timber Site Bootstrap Sass Theme
+      Author: Kasun Fernnado
+      Version 1.0
+
+@import "bootstrap.css"
+
+$blueLight: #2196f3
+$greenLight: #84ad05
+$white: #fff
+$brownLight: #f5af48
+$brownMid: #9f5600
+$brownHigh: #794e2b
+$greyMid: #30312c
+$greyDark: #263238
+
+.back-to-top
+      display: none
+      width: 60px
+      height: 60px
+      text-indent: -9999px
+      position: fixed
+      z-index: 999
+      right: 20px
+      bottom: 20px
+      background: url("../img/up.png") no-repeat center 43%
+      -webkit-border-radius: 30px
+      -moz-border-radius: 30px
+      border-radius: 30px
+
+body
+      position: relative
+      //font-family: 'Lato', sans-serif
+      //font-weight: 300
+      font-size: 1.15em
+
+
+.navbar-default .navbar-toggle
+      border-color: transparent
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
+      background-color: transparent
+
+.navbar-default .navbar-toggle .icon-bar
+      background-color: $blueLight
+
+.navbar-brand
+      height: 1%
+      width: 76%
+
+.navbar-right
+      margin-right: 1%
+
+.navbar-toggle
+      margin-top: 4%
+      margin-bottom: 4%
+
+.navbar-nav
+      margin-top: 1em
+      margin-bottom: 1em
+
+//mixing for nav border color transition
+=border-bottom-color($speed)
+      -webkit-transition: border-bottom-color $speed linear
+      -moz-transition: border-bottom-color $speed linear
+      -o-transition: border-bottom-color $speed linear
+      transition: border-bottom-color $speed linear
+
+#nav
+      padding: 1%
+      background-color: $white
+
+      ul a
+            background-color: $white
+            display: block
+            color: $greenLight
+            padding-bottom: 12px
+            border-bottom: 2px solid transparent
+            text-transform: uppercase
+            text-align: center
+            text-align: -webkit-center
+            +border-bottom-color(0.1s)
+
+      ul a:hover, ul a:active, ul a:focus
+            border-bottom-color: $blueLight
+            color: $blueLight
+            +border-bottom-color(0.1s)
+
+h1
+      padding-bottom: 9px
+      margin: 40px 0 20px
+      text-align: center
+      color: $greenLight
+
+#slider
+      margin-top: 17%
+      text-align: left
+
+#profile, #products, #services, #contact
+      padding-top: 17%
+
+#profile
+      img
+            margin: 0 auto
+            padding: 15%
+
+      h3
+            color: $greenLight
+            text-align: center
+            padding: 5%
+
+      section
+            margin: 0 6%
+            overflow-y: auto
+            max-height: 300px
+
+      h5
+            color: $greenLight
+            text-align: center
+            padding: 2% 0
+            border: 2px solid $greenLight
+            border-radius: 10px
+            margin: 10% auto
+            width: 50%
+
+            span
+                  color: $greyDark
+
+      p
+            text-align: justify
+
+#products
+      img
+            padding: 25%
+            display: block
+            margin-left: auto
+            margin-right: auto
+
+      .caption
+            text-align: center
+
+      .thumbnail
+            border: none
+
+#services
+      img
+            padding: 25%
+            display: block
+            margin-left: auto
+            margin-right: auto
+
+      .caption
+            text-align: center
+
+      section
+            margin: 0 6%
+            overflow-x: auto
+            max-height: 500px
+
+#contact
+      .caption
+            text-align: center
+            padding-bottom: 5%
+
+      .google-maps
+            position: relative
+            margin: 10px
+            margin-top: 20px
+            //padding-bottom: 8%
+            // (440 ÷ 540 = 0.81 = 81%)
+            height: 460px
+            //overflow: hidden
+
+            iframe
+                  position: absolute
+                  top: 0
+                  left: 0
+                  width: 100%
+                  min-height: 200px
+                  max-height:  470px
+
+      #location
+            p
+                  text-transform: uppercase
+
+            h6
+                  color: $blueLight
+
+      .form-group
+            margin: 10px 20px
+
+            .form-control
+                  margin: 10px auto
+
+            .form-control:focus
+                  border-color: $greenLight
+                  outline: 0
+                  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(132, 173, 5, .6)
+                  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(132, 173, 5, .6)
+
+            .btn
+                  margin: 10px auto
+
+#footer
+      color: $white
+      text-align: center
+      margin-top: 5%
+      padding:  5%
+      background-color: $greyMid
+
+      a
+            padding: 2%
+
+            img
+                  margin: 0 auto
+                  max-width: 40px
+
+
+
+// Small devices (landscape phones, 544px and up)
+@media (min-width: 544px)
+      #slider
+            margin-top: 14%
+
+      #profile, #products, #services, #contact
+            padding-top: 14%
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width:768px)
+      #slider
+            margin-top: 9%
+
+      #profile, #products, #services, #contact
+            padding-top: 9%
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width:992px)
+      #slider
+            margin-top: 8%
+
+      #profile, #products, #services, #contact
+            padding-top: 8%
+
+// Extra large devices (large desktops, 1200px and up)
+@media only screen and (min-width:1200px)
+      #slider
+            margin-top: 5%
+
+      #profile, #products, #services, #contact
+            padding-top: 6%
+
